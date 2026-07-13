@@ -1,44 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="lE2sB2FNINRAkr-T-fufkKAZbeZcVJ68Lbda1r52Vds" />
   <meta name="google-site-verification" content="u0tBtEjGbEkzibHtxNyC6T_Rp_7IgU1j5yS2sewLGYk" />
-  <meta name="description" content="Answr es una app para creadores de YouTube: responde, da me gusta y gestiona los comentarios de tu canal desde un único feed.">
-  <title>Answr — Gestiona los comentarios de tu canal de YouTube</title>
+  <meta name="description" content="Answr is an app for YouTube creators: reply to, like, and manage your channel's comments from a single feed.">
+  <title>Answr — Manage your YouTube channel's comments</title>
   <style>
     body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 24px; color: #111; }
     h1 { font-size: 2rem; margin-bottom: 8px; }
     h2 { font-size: 1.2rem; margin-top: 32px; }
     p, li { color: #555; line-height: 1.7; }
     a  { color: #007AFF; text-decoration: none; }
+    .lang-switch { margin-bottom: 24px; }
+    .lang-switch button {
+      font: inherit; font-size: 0.9rem; padding: 6px 14px; margin-right: 8px;
+      border: 1px solid #ccc; border-radius: 20px; background: #fff; cursor: pointer;
+    }
+    .lang-switch button.active { background: #007AFF; color: #fff; border-color: #007AFF; }
+    [data-lang="es"] { display: none; }
   </style>
 </head>
 <body>
-  <h1>Answr</h1>
-  <p>Responde y gestiona los comentarios de tu canal de YouTube desde una sola app, sin pasar por YouTube Studio.</p>
+  <div class="lang-switch">
+    <button type="button" data-set-lang="en" class="active">English</button>
+    <button type="button" data-set-lang="es">Español</button>
+  </div>
 
-  <h2>¿Qué es Answr?</h2>
-  <p>Answr es una aplicación móvil para creadores de YouTube. Conecta tu canal con tu cuenta de Google y reúne los comentarios de todos tus vídeos en un único feed, para que puedas leerlos y responderlos en segundos en lugar de buscarlos vídeo por vídeo.</p>
+  <div data-lang="en">
+    <h1>Answr</h1>
+    <p>Reply to and manage your YouTube channel's comments from a single app, without going through YouTube Studio.</p>
 
-  <h2>Qué puedes hacer con Answr</h2>
-  <ul>
-    <li>Ver en un solo feed los comentarios de todos tus vídeos de YouTube, ordenados por fecha.</li>
-    <li>Responder a un comentario deslizando hacia la derecha, sin salir del feed.</li>
-    <li>Dar "me gusta" a un comentario con doble toque.</li>
-    <li>Mantener una racha diaria de respuestas para estar al día con tu comunidad.</li>
-  </ul>
+    <h2>What is Answr?</h2>
+    <p>Answr is a mobile app for YouTube creators. It connects to your channel through your Google account and brings the comments from all your videos into a single feed, so you can read and reply to them in seconds instead of hunting video by video.</p>
 
-  <h2>Por qué Answr pide acceso a tu cuenta de Google / YouTube</h2>
-  <p>Al iniciar sesión con Google, Answr solicita permiso para leer los vídeos y comentarios de tu canal de YouTube y para publicar o gestionar respuestas y "me gusta" en tu nombre. Usamos ese acceso únicamente para mostrarte y gestionar los comentarios de tu propio canal dentro de la app: no publicamos nada que tú no hayas escrito o aprobado, y no compartimos ni vendemos tus datos a terceros. Más detalles en nuestra <a href="privacy.html">Política de Privacidad</a>.</p>
+    <h2>What you can do with Answr</h2>
+    <ul>
+      <li>See the comments from all your YouTube videos in one feed, sorted by date.</li>
+      <li>Reply to a comment by swiping right, without leaving the feed.</li>
+      <li>Like a comment with a double tap.</li>
+      <li>Keep a daily reply streak to stay on top of your community.</li>
+    </ul>
 
-  <p><a href="https://play.google.com/store/apps/details?id=com.replyflow.app">Descargar en Google Play</a></p>
+    <h2>Why Answr asks for access to your Google / YouTube account</h2>
+    <p>When you sign in with Google, Answr requests permission to read your YouTube channel's videos and comments, and to post or manage replies and likes on your behalf. We use that access only to show and manage the comments on your own channel within the app: we never post anything you have not written or approved, and we never share or sell your data to third parties. More details in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <p><a href="https://play.google.com/store/apps/details?id=com.replyflow.app">Download on Google Play</a></p>
+  </div>
+
+  <div data-lang="es">
+    <h1>Answr</h1>
+    <p>Responde y gestiona los comentarios de tu canal de YouTube desde una sola app, sin pasar por YouTube Studio.</p>
+
+    <h2>¿Qué es Answr?</h2>
+    <p>Answr es una aplicación móvil para creadores de YouTube. Conecta tu canal con tu cuenta de Google y reúne los comentarios de todos tus vídeos en un único feed, para que puedas leerlos y responderlos en segundos en lugar de buscarlos vídeo por vídeo.</p>
+
+    <h2>Qué puedes hacer con Answr</h2>
+    <ul>
+      <li>Ver en un solo feed los comentarios de todos tus vídeos de YouTube, ordenados por fecha.</li>
+      <li>Responder a un comentario deslizando hacia la derecha, sin salir del feed.</li>
+      <li>Dar "me gusta" a un comentario con doble toque.</li>
+      <li>Mantener una racha diaria de respuestas para estar al día con tu comunidad.</li>
+    </ul>
+
+    <h2>Por qué Answr pide acceso a tu cuenta de Google / YouTube</h2>
+    <p>Al iniciar sesión con Google, Answr solicita permiso para leer los vídeos y comentarios de tu canal de YouTube y para publicar o gestionar respuestas y "me gusta" en tu nombre. Usamos ese acceso únicamente para mostrarte y gestionar los comentarios de tu propio canal dentro de la app: no publicamos nada que tú no hayas escrito o aprobado, y no compartimos ni vendemos tus datos a terceros. Más detalles en nuestra <a href="privacy.html">Política de Privacidad</a>.</p>
+
+    <p><a href="https://play.google.com/store/apps/details?id=com.replyflow.app">Descargar en Google Play</a></p>
+  </div>
 
   <p style="margin-top:48px; font-size:0.9rem;">
-    <a href="privacy.html">Política de Privacidad</a> ·
-    <a href="terms.html">Condiciones del Servicio</a> ·
-    Contacto: <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a>
+    <a href="privacy.html">Privacy Policy / Política de Privacidad</a> ·
+    <a href="terms.html">Terms of Service / Condiciones del Servicio</a> ·
+    Contact: <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a>
   </p>
+
+  <script>
+    document.querySelectorAll('[data-set-lang]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var lang = btn.getAttribute('data-set-lang');
+        document.querySelectorAll('[data-lang]').forEach(function (block) {
+          block.style.display = block.getAttribute('data-lang') === lang ? 'block' : 'none';
+        });
+        document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+        });
+        document.documentElement.lang = lang;
+      });
+    });
+  </script>
 </body>
 </html>
