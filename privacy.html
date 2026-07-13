@@ -1,44 +1,136 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad — Answr</title>
+  <title>Privacy Policy — Answr</title>
   <style>
     body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 24px; color: #111; }
     h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 32px; }
     p, li { color: #444; line-height: 1.7; }
     a { color: #007AFF; }
+    .lang-switch { margin-bottom: 24px; }
+    .lang-switch button {
+      font: inherit; font-size: 0.9rem; padding: 6px 14px; margin-right: 8px;
+      border: 1px solid #ccc; border-radius: 20px; background: #fff; cursor: pointer;
+    }
+    .lang-switch button.active { background: #007AFF; color: #fff; border-color: #007AFF; }
+    [data-lang="es"] { display: none; }
   </style>
 </head>
 <body>
-  <h1>Política de Privacidad</h1>
-  <p><strong>Última actualización:</strong> 10 de junio de 2026</p>
-  <p>Esta política explica cómo Answr trata tus datos cuando la usas.</p>
-  <h2>Datos que recopilamos</h2>
-  <ul>
-    <li><strong>Cuenta de Google / YouTube:</strong> mediante OAuth 2.0 accedemos a los comentarios y datos del canal que nos autorizas. No almacenamos tus credenciales en ningún servidor.</li>
-    <li><strong>Preferencias locales:</strong> ajustes guardados únicamente en tu dispositivo.</li>
-    <li><strong>Suscripción:</strong> gestionada a través de RevenueCat. No almacenamos datos de pago.</li>
-    <li><strong>Publicidad:</strong> los usuarios gratuitos ven anuncios de Google AdMob.</li>
-  </ul>
-  <h2>Cómo usamos los datos</h2>
-  <ul>
-    <li>Mostrar y gestionar los comentarios de tus vídeos de YouTube.</li>
-    <li>Recordar tus preferencias dentro de la app.</li>
-    <li>Procesar tu suscripción Pro.</li>
-    <li>Mostrar anuncios a usuarios gratuitos.</li>
-  </ul>
-  <h2>Terceros</h2>
-  <ul>
-    <li><a href="https://policies.google.com/privacy">Google / YouTube Data API</a></li>
-    <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a></li>
-    <li><a href="https://policies.google.com/privacy">Google AdMob</a></li>
-  </ul>
-  <h2>Almacenamiento y seguridad</h2>
-  <p>Los tokens de acceso se guardan en el almacenamiento cifrado del dispositivo. No transferimos tus datos a ningún servidor propio.</p>
-  <h2>Tus derechos</h2>
-  <p>Puedes revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Contacto: <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a></p>
-  <p style="margin-top:48px; font-size:0.9rem;"><a href="/">← Volver</a></p>
+  <div class="lang-switch">
+    <button type="button" data-set-lang="en" class="active">English</button>
+    <button type="button" data-set-lang="es">Español</button>
+  </div>
+
+  <div data-lang="en">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> July 13, 2026</p>
+    <p>This policy explains how Answr handles your data when you use the app.</p>
+    <h2>Data we collect</h2>
+    <ul>
+      <li><strong>Google / YouTube account:</strong> via OAuth 2.0 we access your YouTube channel's comments and data (scope <code>youtube.force-ssl</code>), as well as your name, profile picture, and Google email (scopes <code>openid</code>, <code>email</code>, <code>profile</code>) to identify your account within the app. We never store your credentials on any server.</li>
+      <li><strong>Local preferences:</strong> settings saved only on your device.</li>
+      <li><strong>Subscription:</strong> managed through RevenueCat. We do not store payment data.</li>
+      <li><strong>Advertising:</strong> free users see ads served by Google AdMob.</li>
+    </ul>
+    <h2>How we use your data</h2>
+    <ul>
+      <li>Display and manage the comments on your YouTube videos.</li>
+      <li>Remember your preferences within the app.</li>
+      <li>Process your Pro subscription.</li>
+      <li>Show ads to free users.</li>
+    </ul>
+    <h2>Data sharing and disclosure</h2>
+    <p>We do not sell, rent, or transfer your Google data to third parties for our own commercial or advertising purposes. Google user data is shared only with the following service providers, and only to the extent necessary for the app to function:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google / YouTube Data API</a> — to read and manage your channel's comments.</li>
+      <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a> — to manage your Pro subscription (does not receive YouTube data).</li>
+      <li><a href="https://policies.google.com/privacy">Google AdMob</a> — to show ads to free users (does not receive YouTube data).</li>
+    </ul>
+    <p>We do not transfer or disclose Google user data to any other third party, except where required by law.</p>
+    <h2>Protection of sensitive data</h2>
+    <p>We apply the following safeguards to protect your data:</p>
+    <ul>
+      <li>OAuth access tokens are stored in the device's <strong>secure encrypted storage</strong> (Android Keystore / iOS Secure Enclave), never in plain text.</li>
+      <li>All communication between the app and Google's APIs uses <strong>HTTPS/TLS</strong>.</li>
+      <li>We do not store tokens or Google data on our own servers; everything stays on your device.</li>
+      <li>Requested permissions are limited to the minimum needed for the app's functionality.</li>
+    </ul>
+    <h2>Data retention and deletion</h2>
+    <p>Google data obtained by the app is used in real time and is not persisted on our own servers. OAuth tokens stored locally on your device are automatically deleted when:</p>
+    <ul>
+      <li>You sign out of the app.</li>
+      <li>You revoke access from <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>You uninstall the app.</li>
+    </ul>
+    <p>You can request the deletion of any data associated with your account by emailing <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a>. We will respond to your request within 30 days.</p>
+    <h2>Your rights</h2>
+    <p>You can revoke access at any time from <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. For any privacy questions, contact: <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a></p>
+  </div>
+
+  <div data-lang="es">
+    <h1>Política de Privacidad</h1>
+    <p><strong>Última actualización:</strong> 13 de julio de 2026</p>
+    <p>Esta política explica cómo Answr trata tus datos cuando la usas.</p>
+    <h2>Datos que recopilamos</h2>
+    <ul>
+      <li><strong>Cuenta de Google / YouTube:</strong> mediante OAuth 2.0 accedemos a los comentarios y datos de tu canal de YouTube (scope <code>youtube.force-ssl</code>), así como tu nombre, foto de perfil y correo de Google (scopes <code>openid</code>, <code>email</code>, <code>profile</code>) para identificar tu cuenta dentro de la app. No almacenamos tus credenciales en ningún servidor.</li>
+      <li><strong>Preferencias locales:</strong> ajustes guardados únicamente en tu dispositivo.</li>
+      <li><strong>Suscripción:</strong> gestionada a través de RevenueCat. No almacenamos datos de pago.</li>
+      <li><strong>Publicidad:</strong> los usuarios gratuitos ven anuncios de Google AdMob.</li>
+    </ul>
+    <h2>Cómo usamos los datos</h2>
+    <ul>
+      <li>Mostrar y gestionar los comentarios de tus vídeos de YouTube.</li>
+      <li>Recordar tus preferencias dentro de la app.</li>
+      <li>Procesar tu suscripción Pro.</li>
+      <li>Mostrar anuncios a usuarios gratuitos.</li>
+    </ul>
+    <h2>Compartición y divulgación de datos</h2>
+    <p>No vendemos, alquilamos ni transferimos tus datos de Google a terceros con fines comerciales ni publicitarios propios. Los datos de usuario de Google se comparten únicamente con los siguientes proveedores de servicios, y solo en la medida necesaria para que la app funcione:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google / YouTube Data API</a> — para leer y gestionar comentarios de tu canal.</li>
+      <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a> — para gestionar tu suscripción Pro (no recibe datos de YouTube).</li>
+      <li><a href="https://policies.google.com/privacy">Google AdMob</a> — para mostrar anuncios a usuarios gratuitos (no recibe datos de YouTube).</li>
+    </ul>
+    <p>No transferimos ni divulgamos datos de usuario de Google a ningún otro tercero, salvo que la ley lo exija.</p>
+    <h2>Protección de datos sensibles</h2>
+    <p>Aplicamos los siguientes mecanismos para proteger tus datos:</p>
+    <ul>
+      <li>Los tokens de acceso de OAuth se almacenan en el <strong>almacenamiento seguro cifrado</strong> del dispositivo (Android Keystore / iOS Secure Enclave), nunca en texto plano.</li>
+      <li>Toda la comunicación entre la app y las APIs de Google se realiza mediante <strong>HTTPS/TLS</strong>.</li>
+      <li>No almacenamos tokens ni datos de Google en servidores propios; todo permanece en tu dispositivo.</li>
+      <li>Los permisos solicitados se limitan al mínimo necesario para la funcionalidad de la app.</li>
+    </ul>
+    <h2>Retención y eliminación de datos</h2>
+    <p>Los datos de Google que la app obtiene se usan en tiempo real y no se persisten en servidores propios. Los tokens de OAuth almacenados localmente en tu dispositivo se eliminan automáticamente cuando:</p>
+    <ul>
+      <li>Cierras sesión desde la app.</li>
+      <li>Revocas el acceso desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Desinstala la aplicación.</li>
+    </ul>
+    <p>Puedes solicitar la eliminación de cualquier dato asociado a tu cuenta enviando un correo a <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a>. Atenderemos tu solicitud en un plazo máximo de 30 días.</p>
+    <h2>Tus derechos</h2>
+    <p>Puedes revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Para cualquier consulta sobre privacidad, contacta: <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a></p>
+  </div>
+
+  <p style="margin-top:48px; font-size:0.9rem;"><a href="/">← Back / Volver</a></p>
+
+  <script>
+    document.querySelectorAll('[data-set-lang]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var lang = btn.getAttribute('data-set-lang');
+        document.querySelectorAll('[data-lang]').forEach(function (block) {
+          block.style.display = block.getAttribute('data-lang') === lang ? '' : 'none';
+        });
+        document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+        });
+        document.documentElement.lang = lang;
+      });
+    });
+  </script>
 </body>
 </html>
