@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.replyflow.app",
+      "sha256_cert_fingerprints": [
+        "55:D2:06:39:48:79:E0:99:B4:C8:88:03:7C:DB:70:38:83:C8:C8:B3:7B:B6:8F:07:8C:EE:AF:8A:93:C6:5C:FC",
+        "84:56:E6:58:9A:BA:D4:7A:3D:3E:CA:44:91:53:CB:86:6B:D9:93:2B:B8:D2:D2:E8:94:01:D5:5F:49:4F:94:2E",
+        "41:DE:C1:1A:B4:9D:3C:DB:2F:6E:3F:C9:D6:87:DA:F5:D4:A6:DB:48:C2:76:E6:71:8C:08:A2:4C:C7:1F:B1:10"
+      ]
+    }
+  }
+]
