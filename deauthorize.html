@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deauthorization — Answr</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 24px; color: #111; }
+    h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 32px; }
+    p, li { color: #444; line-height: 1.7; }
+    a { color: #007AFF; }
+    .note { background: #f7f7fa; border-left: 3px solid #007AFF; padding: 12px 16px; border-radius: 0 6px 6px 0; }
+    .lang-switch { margin-bottom: 24px; }
+    .lang-switch button {
+      font: inherit; font-size: 0.9rem; padding: 6px 14px; margin-right: 8px;
+      border: 1px solid #ccc; border-radius: 20px; background: #fff; cursor: pointer;
+    }
+    .lang-switch button.active { background: #007AFF; color: #fff; border-color: #007AFF; }
+    [data-lang="es"] { display: none; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button type="button" data-set-lang="en" class="active">English</button>
+    <button type="button" data-set-lang="es">Español</button>
+  </div>
+
+  <div data-lang="en">
+    <h1>Deauthorization</h1>
+    <p><strong>Last updated:</strong> August 27, 2026</p>
+
+    <p>You are seeing this page because you removed Answr's access to your
+    Instagram account, or you followed the deauthorization link for the app.</p>
+
+    <h2>What happens to your data</h2>
+    <p class="note">Nothing needs to be deleted on our side, because nothing was
+    ever stored there. Answr runs entirely on your device: your access token,
+    your settings and your activity are kept in Android's encrypted secure
+    storage and never sent to any server we operate. There is no user database,
+    no backup and no copy of your comments.</p>
+
+    <p>Once you revoke access from Instagram, the token Answr holds becomes
+    invalid immediately and the app can no longer read or reply to anything on
+    your account.</p>
+
+    <h2>Remove the local copy too</h2>
+    <p>The now-useless token stays on your own phone until you clear it. To wipe
+    it, open Answr and go to <strong>Profile → Connected accounts → Disconnect</strong>,
+    or simply uninstall the app — either action erases it from the device.</p>
+
+    <h2>Requesting deletion in writing</h2>
+    <p>If you want a written confirmation, or you believe some data is still held
+    somewhere, see our <a href="/data-deletion.html">Data Deletion page</a> or
+    email <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a>.
+    We respond within 30 days.</p>
+
+    <p style="margin-top:32px;">See also our
+    <a href="/privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <div data-lang="es">
+    <h1>Desautorización</h1>
+    <p><strong>Última actualización:</strong> 27 de agosto de 2026</p>
+
+    <p>Estás viendo esta página porque has retirado el acceso de Answr a tu cuenta
+    de Instagram, o has seguido el enlace de desautorización de la aplicación.</p>
+
+    <h2>Qué pasa con tus datos</h2>
+    <p class="note">No hay nada que eliminar por nuestra parte, porque nunca se
+    guardó nada ahí. Answr funciona íntegramente en tu dispositivo: tu token de
+    acceso, tus ajustes y tu actividad se guardan en el almacenamiento cifrado de
+    Android y nunca se envían a ningún servidor nuestro. No hay base de datos de
+    usuarios, ni copia de seguridad, ni copia de tus comentarios.</p>
+
+    <p>En cuanto revocas el acceso desde Instagram, el token que tiene Answr queda
+    invalidado al instante y la app ya no puede leer ni responder nada en tu
+    cuenta.</p>
+
+    <h2>Borra también la copia local</h2>
+    <p>El token, ya inservible, sigue en tu propio móvil hasta que lo borres. Para
+    limpiarlo, abre Answr y ve a <strong>Perfil → Cuentas conectadas →
+    Desconectar</strong>, o simplemente desinstala la app — cualquiera de las dos
+    cosas lo elimina del dispositivo.</p>
+
+    <h2>Solicitar la eliminación por escrito</h2>
+    <p>Si quieres una confirmación por escrito, o crees que aún se conserva algún
+    dato en algún sitio, consulta nuestra
+    <a href="/data-deletion.html">página de eliminación de datos</a> o escribe a
+    <a href="mailto:studiojustbetter@gmail.com">studiojustbetter@gmail.com</a>.
+    Respondemos en un plazo máximo de 30 días.</p>
+
+    <p style="margin-top:32px;">Consulta también nuestra
+    <a href="/privacy.html">Política de Privacidad</a>.</p>
+  </div>
+
+  <p style="margin-top:48px; font-size:0.9rem;"><a href="/">← Back / Volver</a></p>
+
+  <script>
+    document.querySelectorAll('[data-set-lang]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var lang = btn.getAttribute('data-set-lang');
+        document.querySelectorAll('[data-lang]').forEach(function (block) {
+          block.style.display = block.getAttribute('data-lang') === lang ? 'block' : 'none';
+        });
+        document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+        });
+        document.documentElement.lang = lang;
+      });
+    });
+  </script>
+</body>
+</html>
